@@ -10,6 +10,8 @@
 	<string>JuFuXinGui</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>4A642ED79FA31BB13D0381AA92498694BBE56FB1</key>
+		<string>github.com:xubojoy/zhuanlebao.git</string>
 		<key>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</key>
 		<string>https://github.com/xubojoy/second.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>JuFuXinGui/JuFuXinGui.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</key>
+		<key>4A642ED79FA31BB13D0381AA92498694BBE56FB1</key>
 		<string>../../..</string>
+		<key>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</key>
+		<string>../../../../second</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/xubojoy/second.git</string>
+	<string>github.com:xubojoy/zhuanlebao.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</string>
+	<string>4A642ED79FA31BB13D0381AA92498694BBE56FB1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>second</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A642ED79FA31BB13D0381AA92498694BBE56FB1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>zhuanlebao</string>
 		</dict>
 	</array>
 </dict>
