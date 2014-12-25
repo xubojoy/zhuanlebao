@@ -16,6 +16,7 @@
 @implementation InvestDetailController
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
     [[NTViewController sharedController] hidesTabBar:YES animated:YES];
 }
 
@@ -23,19 +24,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setRightSwipeGesture];
+    [self initHeader];
+}
+
+#pragma mark - 头部相关
+//初始化头部
+- (void)initHeader{
+    //初始化布局与背景
+    self.header  = [[HeaderView alloc] initWithTitle:@"投资项目" navigationController:self.navigationController];
+    [self.view addSubview:self.header];
     [self initShareBtn];
 }
 
 -(void)initShareBtn{
     
     UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    shareBtn.frame = CGRectMake(300, 20, 44, 44);
+    shareBtn.frame = commonFrame;
     shareBtn.backgroundColor = [UIColor purpleColor];
     [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
     [shareBtn addTarget:self action:@selector(shareBtnPress:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
-    shareItem.width = 100;
-    self.navigationItem.rightBarButtonItem = shareItem;
+    [self.header addSubview:shareBtn];
 }
 
 #pragma mark - -----------------ShareSDK实现分享功能------------------

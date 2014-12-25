@@ -12,4 +12,5 @@
 @interface RecomIndexViewController : UIViewController
 @property (nonatomic ,weak) NTViewController * delegate;
 @property (nonatomic , retain) CycleScrollView *mainScorllView;
+@property (nonatomic, strong) HeaderView *header;
 @end

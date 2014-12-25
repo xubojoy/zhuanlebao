@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UserCenterController : UIViewController
-
+@property (nonatomic, strong) HeaderView *header;
 @end

@@ -12,8 +12,12 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 43.5, VIEW_WEIGHT, 0.5)];
-    self.lineView.backgroundColor = [UIColor lightGrayColor];
+    self.upLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, VIEW_WEIGHT, 0.5)];
+    self.upLine.backgroundColor = splite_line_color;
+    [self.contentView addSubview:self.upLine];
+    
+    self.lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 39.5, VIEW_WEIGHT, 0.5)];
+    self.lineView.backgroundColor = splite_line_color;
     [self.contentView addSubview:self.lineView];
     
     

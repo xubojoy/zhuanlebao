@@ -12,6 +12,29 @@
 #define IOS_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f)
 
 
+#define commonFrame  CGRectMake(260, 20, 44, 44)
+
+#define splite_line_height 0.5
+
+#define splite_line_color  RGBACOLOR(204, 204, 204, 1)
+
+#define navigation_height     44
+#define status_bar_height     20
+#define tabbar_height         51
+#define general_margin        15
+#define general_cell_height   44
+#define general_padding       10
+#define general_height        40
+#define splite_line_height    0.5
+#define screen_width          [UIScreen mainScreen].bounds.size.width
+#define main_content_height   [UIScreen mainScreen].bounds.size.height - self.header.frame.size.height
+#define bottomY(view)         view.frame.size.height + view.frame.origin.y
+#define leftX(view)           view.frame.size.width + view.frame.origin.x
+#define IOS6                  ([[[UIDevice currentDevice] systemVersion] floatValue] < 7)?YES:NO
+#define IOS7                  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7)?YES:NO
+#define IOS8                  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8)?YES:NO
+
+
 //整个屏幕的宽和高
 #define VIEW_WEIGHT [UIScreen mainScreen].bounds.size.width
 #define VIEW_HEIGHT (IOS_7 ?[UIScreen mainScreen].bounds.size.height :([UIScreen mainScreen].bounds.size.height-64))

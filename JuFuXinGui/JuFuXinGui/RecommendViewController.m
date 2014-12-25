@@ -17,36 +17,36 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+     self.navigationController.navigationBarHidden = YES;
     [[NTViewController sharedController] hidesTabBar:YES animated:YES];
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 设定位置和大小
-    self.title = @"推荐项目";
-    CGRect frame = CGRectMake(0,80,[UIScreen mainScreen].bounds.size.width,320);
-    // 读取gif图片数据
-    NSData *gif = [NSData dataWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"play" ofType:@"gif"]];
-    // view生成
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:frame];
-    webView.userInteractionEnabled = NO;//用户不可交互
-    webView.backgroundColor = [UIColor clearColor];
-    [webView loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
-    [self.view addSubview:webView];
+    [self setRightSwipeGesture];
+    [self initHeader];
+    
+}
+
+#pragma mark - 头部相关
+//初始化头部
+- (void)initHeader{
+    //初始化布局与背景
+    self.header  = [[HeaderView alloc] initWithTitle:@"推荐项目" navigationController:self.navigationController];
+    self.header.backBut.hidden = NO;
+    [self.view addSubview:self.header];
     [self initShareBtn];
 }
 
 -(void)initShareBtn{
     
     UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    shareBtn.frame = CGRectMake(300, 20, 44, 44);
+    shareBtn.frame = CGRectMake(260, 20, 44, 44);
     shareBtn.backgroundColor = [UIColor purpleColor];
     [shareBtn addTarget:self action:@selector(shareBtnPress:) forControlEvents:UIControlEventTouchUpInside];
     [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
-    shareItem.width = 100;
-    self.navigationItem.rightBarButtonItem = shareItem;
+    [self.header addSubview:shareBtn];
 }
 
 #pragma mark - -----------------ShareSDK实现分享功能------------------

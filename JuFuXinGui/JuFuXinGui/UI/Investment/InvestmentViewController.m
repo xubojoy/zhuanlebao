@@ -19,27 +19,34 @@ static NSString *identifier = @"cell";
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
     [[NTViewController sharedController] hidesTabBar:NO animated:NO];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"投资项目";
     self.view.backgroundColor = [UIColor whiteColor];
-    [self initShareBtn];
+    [self initHeader];
     [self initTableView];
 }
+#pragma mark - 头部相关
+//初始化头部
+- (void)initHeader{
+    //初始化布局与背景
+    self.header  = [[HeaderView alloc] initWithTitle:@"投资项目" navigationController:self.navigationController];
+    self.header.backBut.hidden = YES;
+    [self.view addSubview:self.header];
+    [self initSearchBtn];
+}
 
--(void)initShareBtn{
+-(void)initSearchBtn{
     
     UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    searchBtn.frame = CGRectMake(300, 20, 44, 44);
+    searchBtn.frame = CGRectMake(260, 20, 44, 44);
     searchBtn.backgroundColor = [UIColor purpleColor];
     [searchBtn setTitle:@"搜索" forState:UIControlStateNormal];
     [searchBtn addTarget:self action:@selector(searchBtnPress:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:searchBtn];
-    shareItem.width = 100;
-    self.navigationItem.rightBarButtonItem = shareItem;
+    [self.header addSubview:searchBtn];
 }
 
 -(void)searchBtnPress:(id)sender{
@@ -48,7 +55,7 @@ static NSString *identifier = @"cell";
 
 //初始化tableView
 -(void)initTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, VIEW_WEIGHT, VIEW_HEIGHT-49) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.header.frame.size.height, VIEW_WEIGHT, VIEW_HEIGHT-49) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     UINib *nib = [UINib nibWithNibName:@"InvestmentCell" bundle:nil];

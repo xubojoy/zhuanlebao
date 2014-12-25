@@ -23,12 +23,14 @@
         self.view.backgroundColor = [UIColor whiteColor];
         self.title = @"推荐项目";
         // Custom initialization
+        
     }
     return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
     [self.mainScorllView.animationTimer resumeTimer];
     [[NTViewController sharedController] hidesTabBar:NO animated:NO];
 }
@@ -36,21 +38,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initHeader];
     [self initBtn];
-    [self initShareBtn];
     [self initScrollView];
+}
+
+#pragma mark - 头部相关
+//初始化头部
+- (void)initHeader{
+    //初始化布局与背景
+    self.header  = [[HeaderView alloc] initWithTitle:@"推荐项目" navigationController:self.navigationController];
+    self.header.backBut.hidden = YES;
+    [self.view addSubview:self.header];
+    [self initShareBtn];
 }
 
 -(void)initShareBtn{
     
     UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    shareBtn.frame = CGRectMake(300, 20, 44, 44);
+    shareBtn.frame = CGRectMake(260, 20, 44, 44);
     shareBtn.backgroundColor = [UIColor purpleColor];
     [shareBtn addTarget:self action:@selector(shareBtnPress:) forControlEvents:UIControlEventTouchUpInside];
     [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
-    shareItem.width = 100;
-    self.navigationItem.rightBarButtonItem = shareItem;
+    [self.header addSubview:shareBtn];
 }
 
 #pragma mark - -----------------ShareSDK实现分享功能------------------

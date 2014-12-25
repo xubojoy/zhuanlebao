@@ -18,8 +18,6 @@
     
     
     [ShareSDKProcessor initShareSDK];
-    
-
     self.window.backgroundColor = [UIColor whiteColor];
     self.viewController = [[NTViewController alloc]init];
     self.window.rootViewController = self.viewController;

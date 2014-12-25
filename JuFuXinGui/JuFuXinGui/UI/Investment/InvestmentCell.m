@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.statusLabel.frame = CGRectMake(VIEW_WEIGHT-20, 4, 20, 33);
+    self.statusLabel.frame = CGRectMake(VIEW_WEIGHT-60, 6, 40, 16);
+    self.statusLabel.backgroundColor = RGBACOLOR(244, 66, 71, 1);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

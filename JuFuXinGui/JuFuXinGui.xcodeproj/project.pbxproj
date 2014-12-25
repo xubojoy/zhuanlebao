@@ -42,6 +42,11 @@
 		A82CA5F01A416C6B0083884B /* NTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82CA5EE1A416C6B0083884B /* NTViewController.m */; };
 		A8460C4C1A42A51E00530050 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8460C491A42A51E00530050 /* CycleScrollView.m */; };
 		A8460C4D1A42A51E00530050 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A8460C4B1A42A51E00530050 /* NSTimer+Addition.m */; };
+		A88F84211A4BF1B000BAE44F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88F841F1A4BF1B000BAE44F /* WebViewController.m */; };
+		A88F84221A4BF1B000BAE44F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88F84201A4BF1B000BAE44F /* WebViewController.xib */; };
+		A88F84271A4BF4FE00BAE44F /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88F84241A4BF4FE00BAE44F /* HeaderView.xib */; };
+		A88F84281A4BF4FE00BAE44F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A88F84251A4BF4FE00BAE44F /* HeaderView.m */; };
+		A88F842C1A4C052900BAE44F /* UIViewController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = A88F842A1A4C052900BAE44F /* UIViewController+Custom.m */; };
 		A8F3F6EE1A42B95000BDD1C4 /* play.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8F3F6ED1A42B95000BDD1C4 /* play.gif */; };
 		A8F3F6F21A42C69600BDD1C4 /* ShareSDKProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3F6F01A42C69600BDD1C4 /* ShareSDKProcessor.m */; };
 		A8F3F7371A42C95100BDD1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F3F7361A42C95100BDD1C4 /* SystemConfiguration.framework */; };
@@ -143,6 +148,14 @@
 		A8460C491A42A51E00530050 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
 		A8460C4A1A42A51E00530050 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		A8460C4B1A42A51E00530050 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		A88F841E1A4BF1B000BAE44F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = UI/aboutUs/WebViewController.h; sourceTree = "<group>"; };
+		A88F841F1A4BF1B000BAE44F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = UI/aboutUs/WebViewController.m; sourceTree = "<group>"; };
+		A88F84201A4BF1B000BAE44F /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = UI/aboutUs/WebViewController.xib; sourceTree = "<group>"; };
+		A88F84241A4BF4FE00BAE44F /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = UI/common/HeaderView.xib; sourceTree = "<group>"; };
+		A88F84251A4BF4FE00BAE44F /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = UI/common/HeaderView.m; sourceTree = "<group>"; };
+		A88F84261A4BF4FE00BAE44F /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = UI/common/HeaderView.h; sourceTree = "<group>"; };
+		A88F842A1A4C052900BAE44F /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Custom.m"; path = "UI/category/UIViewController+Custom.m"; sourceTree = "<group>"; };
+		A88F842B1A4C052900BAE44F /* UIViewController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Custom.h"; path = "UI/category/UIViewController+Custom.h"; sourceTree = "<group>"; };
 		A8F3F6ED1A42B95000BDD1C4 /* play.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = play.gif; sourceTree = "<group>"; };
 		A8F3F6F01A42C69600BDD1C4 /* ShareSDKProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareSDKProcessor.m; path = processor/ShareSDKProcessor.m; sourceTree = "<group>"; };
 		A8F3F6F11A42C69600BDD1C4 /* ShareSDKProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareSDKProcessor.h; path = processor/ShareSDKProcessor.h; sourceTree = "<group>"; };
@@ -343,6 +356,8 @@
 		A82CA5BC1A415E5C0083884B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A88F84291A4C04F300BAE44F /* category */,
+				A88F84231A4BF4D700BAE44F /* common */,
 				A82CA5C01A415EA30083884B /* aboutUs */,
 				A82CA5BF1A415E920083884B /* userCenter */,
 				A82CA5BE1A415E7C0083884B /* Investment */,
@@ -354,8 +369,8 @@
 		A82CA5BD1A415E690083884B /* recommend */ = {
 			isa = PBXGroup;
 			children = (
-				A82CA5C11A415F760083884B /* RecomIndexViewController.m */,
 				A82CA5C21A415F760083884B /* RecomIndexViewController.h */,
+				A82CA5C11A415F760083884B /* RecomIndexViewController.m */,
 				A82CA5D11A4163280083884B /* RecommendViewController.h */,
 				A82CA5D21A4163280083884B /* RecommendViewController.m */,
 				A82CA5D31A4163280083884B /* RecommendViewController.xib */,
@@ -380,9 +395,9 @@
 		A82CA5BF1A415E920083884B /* userCenter */ = {
 			isa = PBXGroup;
 			children = (
-				A82CA5C71A415F9B0083884B /* UserCenterController.xib */,
-				A82CA5C81A415F9B0083884B /* UserCenterController.m */,
 				A82CA5C91A415F9B0083884B /* UserCenterController.h */,
+				A82CA5C81A415F9B0083884B /* UserCenterController.m */,
+				A82CA5C71A415F9B0083884B /* UserCenterController.xib */,
 			);
 			name = userCenter;
 			sourceTree = "<group>";
@@ -390,12 +405,15 @@
 		A82CA5C01A415EA30083884B /* aboutUs */ = {
 			isa = PBXGroup;
 			children = (
-				A82CA5CC1A415FA60083884B /* AboutUsViewController.xib */,
-				A82CA5CD1A415FA60083884B /* AboutUsViewController.m */,
 				A82CA5CE1A415FA60083884B /* AboutUsViewController.h */,
+				A82CA5CD1A415FA60083884B /* AboutUsViewController.m */,
+				A82CA5CC1A415FA60083884B /* AboutUsViewController.xib */,
 				A8166F101A43D88F00A34A5B /* AboutUsCell.h */,
 				A8166F111A43D88F00A34A5B /* AboutUsCell.m */,
 				A8166F121A43D88F00A34A5B /* AboutUsCell.xib */,
+				A88F841E1A4BF1B000BAE44F /* WebViewController.h */,
+				A88F841F1A4BF1B000BAE44F /* WebViewController.m */,
+				A88F84201A4BF1B000BAE44F /* WebViewController.xib */,
 			);
 			name = aboutUs;
 			sourceTree = "<group>";
@@ -409,6 +427,25 @@
 				A8460C4B1A42A51E00530050 /* NSTimer+Addition.m */,
 			);
 			path = scrollView;
+			sourceTree = "<group>";
+		};
+		A88F84231A4BF4D700BAE44F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A88F84241A4BF4FE00BAE44F /* HeaderView.xib */,
+				A88F84251A4BF4FE00BAE44F /* HeaderView.m */,
+				A88F84261A4BF4FE00BAE44F /* HeaderView.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		A88F84291A4C04F300BAE44F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				A88F842A1A4C052900BAE44F /* UIViewController+Custom.m */,
+				A88F842B1A4C052900BAE44F /* UIViewController+Custom.h */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 		A8F3F6EF1A42C66700BDD1C4 /* processor */ = {
@@ -605,6 +642,7 @@
 				A82CA5E61A416B850083884B /* tabbar_product.png in Resources */,
 				A82CA5CF1A415FA60083884B /* AboutUsViewController.xib in Resources */,
 				A8F3F7801A42D25900BDD1C4 /* ShareSDKiPhoneDefaultShareViewUI.bundle in Resources */,
+				A88F84221A4BF1B000BAE44F /* WebViewController.xib in Resources */,
 				A8F3F7821A42D25900BDD1C4 /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */,
 				A82CA5641A4137720083884B /* Main.storyboard in Resources */,
 				A82CA5EA1A416B850083884B /* tabbar_info.png in Resources */,
@@ -619,6 +657,7 @@
 				A8166F141A43D88F00A34A5B /* AboutUsCell.xib in Resources */,
 				A8F3F7791A42D25900BDD1C4 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				A82CA5D51A4163280083884B /* RecommendViewController.xib in Resources */,
+				A88F84271A4BF4FE00BAE44F /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8166F131A43D88F00A34A5B /* AboutUsCell.m in Sources */,
+				A88F84281A4BF4FE00BAE44F /* HeaderView.m in Sources */,
 				A8460C4C1A42A51E00530050 /* CycleScrollView.m in Sources */,
 				A82CA5D01A415FA60083884B /* AboutUsViewController.m in Sources */,
 				A8166F171A44002800A34A5B /* InvestDetailController.m in Sources */,
@@ -644,6 +684,8 @@
 				A82CA5D41A4163280083884B /* RecommendViewController.m in Sources */,
 				A82CA5DB1A4169C50083884B /* NTButton.m in Sources */,
 				A8460C4D1A42A51E00530050 /* NSTimer+Addition.m in Sources */,
+				A88F84211A4BF1B000BAE44F /* WebViewController.m in Sources */,
+				A88F842C1A4C052900BAE44F /* UIViewController+Custom.m in Sources */,
 				A82CA55E1A4137720083884B /* AppDelegate.m in Sources */,
 				A8F3F6F21A42C69600BDD1C4 /* ShareSDKProcessor.m in Sources */,
 				A8F3F7481A42CE8A00BDD1C4 /* ShareContent.m in Sources */,

@@ -10,4 +10,5 @@
 
 @interface RecommendViewController : UIViewController
 
+@property (nonatomic, strong) HeaderView *header;
 @end

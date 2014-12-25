@@ -11,4 +11,5 @@
 @interface InvestmentViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) HeaderView *header;
 @end

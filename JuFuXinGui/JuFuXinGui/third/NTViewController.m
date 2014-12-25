@@ -58,13 +58,19 @@ static NTViewController *controller = nil;
     return nil;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self initTabbar];
+    
 }
 
 -(void)initTabbar{
+    
     self.tabBar.hidden = YES;
     CGFloat tabBarViewY = self.view.frame.size.height - 49;
     

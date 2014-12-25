@@ -11,5 +11,6 @@
 @interface AboutUsCell : UITableViewCell
 
 @property (strong, nonatomic) UIView *lineView;
+@property (nonatomic, strong) UIView *upLine;
 
 @end
