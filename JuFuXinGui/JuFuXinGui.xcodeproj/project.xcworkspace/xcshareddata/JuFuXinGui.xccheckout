@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6FD8C6F3-C08D-42E3-B475-6AC39A586EB8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JuFuXinGui</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</key>
+		<string>https://github.com/xubojoy/second.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JuFuXinGui/JuFuXinGui.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xubojoy/second.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AD6B3A627ECC706CC271F65C82CFFEA96F70944E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>second</string>
+		</dict>
+	</array>
+</dict>
+</plist>
